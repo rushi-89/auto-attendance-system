@@ -1324,7 +1324,7 @@ td strong {
 .site-footer .footer-brand img {
     height: 60px;
     width: auto;
-    filter: brightness(0) invert(1);
+
     /* Forces logo to be white */
 }
 
@@ -1384,4 +1384,115 @@ td strong {
 .site-footer .copyright .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* =========================================
+   Professional Dark Theme Overrides
+   ========================================= */
+.theme-dark {
+    background-color: #0f172a !important;
+    color: #94a3b8 !important;
+}
+
+/* Core Layout Elements (Panels & Headers) */
+.theme-dark .site-header,
+.theme-dark .panel,
+.theme-dark .steps-strip,
+.theme-dark .message-preview {
+    background-color: #1e293b !important;
+    border-color: #334155 !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Headings & Emphasized Text */
+.theme-dark h1,
+.theme-dark h2,
+.theme-dark h3,
+.theme-dark strong,
+.theme-dark .brand-copy strong,
+.theme-dark td strong,
+.theme-dark .panel-heading h2,
+.theme-dark .stat-card strong,
+.theme-dark .dropzone strong,
+.theme-dark .send-copy h3,
+.theme-dark th {
+    color: #f8fafc !important;
+}
+
+/* Standard Text, Paragraphs & Cells */
+.theme-dark p,
+.theme-dark span,
+.theme-dark small,
+.theme-dark td,
+.theme-dark .welcome-row p,
+.theme-dark .side-description,
+.theme-dark .dropzone span {
+    color: #94a3b8 !important;
+}
+
+/* Form Inputs & Search Box */
+.theme-dark input,
+.theme-dark .search-box {
+    background-color: #0f172a !important;
+    color: #f8fafc !important;
+    border-color: #334155 !important;
+}
+
+.theme-dark .search-box input {
+    color: #f8fafc !important;
+}
+
+/* Tables & Dividers */
+.theme-dark .table-container,
+.theme-dark table,
+.theme-dark th,
+.theme-dark td,
+.theme-dark .requirements,
+.theme-dark .send-panel {
+    border-color: #334155 !important;
+}
+
+.theme-dark thead {
+    background-color: #0f172a !important;
+}
+
+.theme-dark tbody tr:hover {
+    background-color: #111827 !important;
+}
+
+/* Cards, Dropzones & Tag Lists */
+.theme-dark .stat-card,
+.theme-dark .dropzone,
+.theme-dark .tag-list span {
+    background-color: #0f172a !important;
+    border-color: #334155 !important;
+}
+
+.theme-dark .dropzone:hover,
+.theme-dark .dropzone.has-file {
+    background-color: #1e293b !important;
+    border-color: #3b82f6 !important;
+}
+
+/* Icons & Badges */
+.theme-dark .step-item>span,
+.theme-dark .heading-icon,
+.theme-dark .side-icon,
+.theme-dark .channel-icon,
+.theme-dark .upload-symbol,
+.theme-dark .student-avatar {
+    background-color: #334155 !important;
+    color: #60a5fa !important;
+}
+
+.theme-dark .step-item.active>span {
+    background-color: #1d4ed8 !important;
+    color: #eff6ff !important;
+}
+
+/* Warning & Info Blocks */
+.theme-dark .side-note,
+.theme-dark .row-errors {
+    background-color: #1e293b !important;
+    border-color: #334155 !important;
 }
