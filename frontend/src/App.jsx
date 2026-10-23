@@ -1,6 +1,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import collegeLogo from "./assets/college-logo.png";
+import Footer from "./Footer";
 import {
   ArrowRight,
   BellRing,
@@ -1008,19 +1009,8 @@ function App() {
         )}
       </main>
 
-      <footer
-        style={{
-          padding: 24,
-          textAlign: "center",
-          borderTop: "1px solid #cbd5e1"
-        }}
-      >
-        <p>
-          Shri Guru Gobind Singhji Institute of Engineering & Technology
-        </p>
-        <small>Smart Attendance Console · Review before sending notifications</small>
-      </footer>
-    </div>
+<Footer/>  
+  </div>
   );
 }
 

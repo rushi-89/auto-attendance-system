@@ -1,0 +1,374 @@
+
+.attendance-footer {
+  margin-top: 60px;
+  background: #102345;
+  color: #cbd5e1;
+  font-family: inherit;
+  width: 100%;
+}
+
+
+.attendance-footer-container {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr 1fr 1.15fr 1.15fr;
+  grid-template-rows: auto auto;
+  gap: 24px;
+  align-items: start;
+}
+
+/* Keep the institute and map in the first column */
+.footer-institute {
+  grid-column: 1;
+  grid-row: 1 / 3;
+ padding: 28px 28px 0 28px;
+ 
+ box-sizing: border-box;
+}
+.attendance-footer-container > .footer-column {
+  margin-top: 24px;
+}
+/* Put the information panels in the empty area beside the map */
+.footer-info-center {
+  grid-column: 2 / 6;
+  grid-row: 2;
+  align-self: start;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 0;
+  padding: 10px 0 20px;
+}
+
+.footer-info-card {
+  text-align: center;
+  padding: 18px 16px;
+  border-top: 1px solid #344968;
+}
+
+.footer-info-card h4 {
+  color: #f59e0b;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  margin: 0 0 14px;
+}
+
+.footer-info-card p {
+  color: #b5c5dc;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0 auto;
+  max-width: 420px;
+}
+
+@media (max-width: 1000px) {
+  .attendance-footer-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-institute {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  .footer-info-center {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .attendance-footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-info-center {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* @media (max-width: 600px) {
+  .footer-info-center {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 10px 22px 28px;
+  }
+}
+
+.footer-column p {
+  color: #b5c5dc;
+  font-size: 13px;
+  line-height: 1.8;
+} */
+/* Institute logo and information */
+.footer-logo {
+  display: block;
+  margin: 8px 0 16px 0;
+  width: 100%;
+  max-width: 440px;
+}
+
+.footer-logo img {
+ display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.footer-tagline {
+ margin: 14px 0 18px;
+  line-height: 1.6;
+}
+
+/* Social links */
+.footer-socials {
+   margin: 0 0 24px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footer-socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #52647f;
+  border-radius: 8px;
+  color: #dbeafe;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.footer-socials a:hover {
+  background: #f59e0b;
+  color: #102345;
+  border-color: #f59e0b;
+}
+
+/* Campus map link */
+.footer-map {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 470px;
+  padding: 16px;
+  border: 1px solid #344968;
+  border-radius: 10px;
+  color: #cbd5e1;
+  text-decoration: none;
+  background: #172d50;
+  transition: background 0.2s;
+}
+
+.footer-map:hover {
+  background: #203b63;
+}
+
+.map-pin {
+  font-size: 25px;
+}
+
+.footer-map strong,
+.footer-map small {
+  display: block;
+}
+
+.footer-map strong {
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.footer-map small {
+  color: #b5c5dc;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.map-arrow {
+  margin-left: auto;
+  color: #f59e0b;
+  font-size: 20px;
+}
+
+/* Footer columns */
+.footer-column h4 {
+  color: #f59e0b;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  padding-bottom: 12px;
+  margin: 2px 0 12px;
+  border-bottom: 1px solid #344968;
+}
+
+.footer-column a {
+  display: block;
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 9px;
+  overflow-wrap: anywhere;
+  transition: color 0.2s;
+}
+
+.footer-column a::before {
+  content: "•";
+  color: #8494ad;
+  margin-right: 10px;
+}
+
+.footer-column a:hover {
+  color: #fbbf24;
+}
+
+.footer-contact p {
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 10px 0;
+}
+
+.footer-contact .footer-note {
+  color: #94a9c6;
+  font-size: 12px;
+  margin-top: 18px;
+}
+
+/* Copyright strip */
+.footer-bottom {
+  border-top: 1px solid #263d5d;
+  background: #0c1d39;
+}
+
+.footer-bottom-inner {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  font-size: 12px;
+  color: #aebed4;
+  line-height: 1.7;
+}
+
+.footer-bottom-right {
+  text-align: right;
+}
+
+/* Tablets */
+@media (max-width: 1000px) {
+  .attendance-footer-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .attendance-footer-container {
+    grid-template-columns: 1fr;
+    padding: 30px 22px;
+    gap: 30px;
+  }
+
+  .footer-logo,
+  .footer-map {
+    max-width: 100%;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px 22px;
+  }
+
+  .footer-bottom-right {
+    text-align: left;
+  }
+}
+
+.footer-map-section {
+  width: 100%;
+  max-width: 470px;
+  margin-top: 24px;
+}
+
+.footer-map-embed {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #344968;
+  background: #172d50;
+}
+
+.footer-map-embed iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
+
+.footer-map-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ffffff;
+  color: #1677ff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px #0002;
+}
+
+.footer-map-button:hover {
+  background: #f1f5f9;
+}
+
+.footer-map-address {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 18px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.footer-map-pin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+  height: 38px;
+  border: 1px solid #52647f;
+  border-radius: 8px;
+}
+
+.footer-map-address strong {
+  color: #dbeafe;
+}
+
+.footer-map-address p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .footer-map-section {
+    max-width: 100%;
+  }
+
+  .footer-map-embed {
+    height: 200px;
+  }
+}
